@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=442&q=80",
+        "name": "TAG Heuer Carrera",
+        "description": "Founded in 1875 by Jules-Louis Audemars and Edward-Auguste Piguet",
+        "details": "Founded in 1875 by Jules-Louis Audemars and Edward-Auguste Piguet, Audemars Piguet produces 36,000 of their prestigious timepieces a year. In fact, Tiffany & Co and Bulgari use this brand’s movements. This luxury watch brand is also noted for creating the first steel luxury sports watch. This was dubbed the Royal Oak in 1972. ",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "name": "Vacheron Constantin",
+        "description": "One of the oldest manufacturers of luxury watches, Vacheron Constantin, was founded by Jean-Marc",
+        "details": "One of the oldest manufacturers of luxury watches, Vacheron Constantin, was founded by Jean-Marc Vacheron in 1755, in Geneva Switzerland. This brand of fine watches is a member of the Richemont Group. Vacheron Constantin’s watches truly reflect their heritage. With precise detailing alongside traditional shapes and styling",
+        "price": 29.99
+    },
+    {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1376&q=80",
+        "name": "Patek Philippe",
+        "description": "The Swiss brand, Patek Phillipe & Co was founded in 1851. The watches boast complicated mechanics ",
+        "details": "The Swiss brand, Patek Phillipe & Co was founded in 1851. The watches boast complicated mechanics and traditional styling and have been worn by royalty throughout history. Inspiringly classic and unique with its distinctive signature style, this brand keeps its marketing consistent with their promotional campaigns.",
+        "price": 39.99
+    },
+    {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1622434641406-a158123450f9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=404&q=80",
+        "name": "Blancpain",
+        "description": "A subsidiary of the Swatch Group, watch brand Blancpain.",
+        "details": "A subsidiary of the Swatch Group, watch brand Blancpain was much like the other brands founded in another era; 1735. Blancpain underwent big developments, with its growth thriving in the 19th century, updating and modernizing production and innovation of their watches. Blancpain has a broad range of different watches availables.",
+        "price": 19.99
+    },
+    {
+        "id": 5,
+        "image": "https://images.unsplash.com/photo-1525740664269-1bb17f251737?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+        "name": "Chopard",
+        "description": "Known for their Swiss watches, Chopard is not only known for their unique timepieces.",
+        "details": "Known for their Swiss watches, Chopard is not only known for their unique timepieces, but also for their jewelry. Founded in 1860 by Louis-Ulysse Chopard, a Swiss watchmaker, Chopard is identifiable for its classic look and great detailing. With state-of-the-art technological influence and well-established craftsmanship.",
+        "price": 29.99
+    },
+    {
+        "id": 6,
+        "image": "https://images.unsplash.com/photo-1528968620-57e0257ff360?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+        "name": " IWC Schaffhausen",
+        "description": "Established in 1868, IWC Schaffhausen has specialized in premium Swiss watches.",
+        "details": "Established in 1868, IWC Schaffhausen has specialized in premium Swiss watches. This watch manufacturer combines precision engineering with exclusive design, and its timepieces are identifiable by their classic shape and superior material. Interestingly, the brand has expressed a desire to create watches with superior standards  while responding to the environmental challenges of today as well as supporting landmark projects around the world.",
+        "price": 39.99
+    },
+    {
+        "id": 7,
+        "image": "https://images.unsplash.com/photo-1535449425-adc6f5faa71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
+        "name": "Rolex",
+        "description": "One of, if not the most identifiable luxury watch brands, Rolex is internationally acclaimed.",
+        "details": "One of, if not the most identifiable luxury watch brands, Rolex is internationally acclaimed and coveted by society. Prized for its timeless form and function, Rolex watches are prevalent in popular culture. Its British origins are still represented in this brand’s consistently classic designs. Rolex is internationally recognized and has been featured on Forbes’ list of the world’s most powerful global brands. Rolex is also the largest single luxury watch brand, making 2,000 watches per day.",
+        "price": 39.99
+    },
+    {
+        "id": 8,
+        "image": "https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80",
+        "name": "Ulysse Nardin",
+        "description": "Ulysse Nardin has been in continuous production since its creation in 1846.",
+        "details": "Ulysse Nardin has been in continuous production since its creation in 1846. Specializing in wristwatches, writing instruments and accessories, the materials used in these products are visually distinctive, much like the uniquely colored leathers utilized in many of their goods. The craftsmanship of the Ulysse Nardin watches is also internationally renowned for their work with modernized materials and manufacturing.",
+        "price": 39.99
+    },
+    {
+        "id": 9,
+        "image": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+        "name": "Jaeger-LeCoultre",
+        "description": "The luxury Swiss watch brand, Jaeger-LeCoultre features timepieces boasting faces.",
+        "details": "The luxury Swiss watch brand, Jaeger-LeCoultre features timepieces boasting faces with unique and complex detailing. Since 1833, this brand has sustained the initial envisions for the brand, which was innovation and unique clarity. The classic elements of these watches are particularly appealing because they can be worn again and again.",
+        "price": 39.99
+    },
+    {
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "name": "Piaget SA",
+        "description": "Piaget SA was founded by Georges Edouard Piaget in La Côte-aux-Fées, Switzerland.",
+        "details": "Piaget SA was founded by Georges Edouard Piaget in La Côte-aux-Fées, Switzerland. Known for their thinner watch styles, their materials are also incredibly unique, flaunting dials made in precious stones such as lapis-lazuli, turquoise, onyx and tiger’s eye. Piaget announced in 2014 their Altiplano 900P watch, which is the world’s thinnest hand-wound mechanical watch..",
+        "price": 39.99
+    },
+    {
+        "id": 11,
+        "image": "https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "name": "Crowns & Bridges",
+        "description": "We’ll design, produce and insert ceramic structure all in one single appointment.",
+        "details": "We’ll design, produce and insert ceramic structure all in one single appointment.At Trinity Orthodontics, we use advanced treatment plans and custom orthodontic care to provide patients with straight, beautiful smiles quickly and efficiently. Whether your misaligned teeth are causing serious TMJ issues, or you just want to be able .",
+        "price": 39.99
+    },
+    {
+        "id": 12,
+        "image": "https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+        "name": "Crowns & Bridges",
+        "description": "We’ll design, produce and insert ceramic structure all in one single appointment.",
+        "details": "We’ll design, produce and insert ceramic structure all in one single appointment.At Trinity Orthodontics, we use advanced treatment plans and custom orthodontic care to provide patients with straight, beautiful smiles quickly and efficiently. Whether your misaligned teeth are causing serious TMJ issues, or you just want to be able to smile with confidence, our knowledgeable and experienced .",
+        "price": 39.99
+    }
+]
