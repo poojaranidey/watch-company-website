@@ -11,7 +11,7 @@ const Reviews = () => {
 
     }, [])
     return (
-        <Container id="services" >
+        <Container  >
             <h2 className="text-warning my-5">Customer review</h2>
             <Row xs={1} md={3} className="g-4 mb-5">
                 {

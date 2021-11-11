@@ -70,7 +70,7 @@ const Home = () => {
                                 <h3>{service?.name}</h3>
                                 <h5>Price: {service?.price}</h5>
                                 <p className="px-3">{service?.description}</p>
-                                <Link to={`/details/${service?.id}`}>
+                                <Link to={`/details/${service?._id}`}>
                                     <button className="btn btn-warning">See details for   {service?.name.toLowerCase()}</button>
                                 </Link>
                             </div></Col>)
@@ -78,7 +78,7 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <div>
+            <div className="review">
                 <Reviews></Reviews>
             </div>
 

@@ -17,13 +17,13 @@ const AddReview = () => {
     }
 
     return (
-        <div className="add-service">
+        <div className="add-review">
             <h1>Please add a review about our watches</h1>
             <form onSubmit={handleSubmit(onSubmit)} >
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
 
                 <textarea className="mb-3" {...register("message")} placeholder="Message" />
-                <input type="number" {...register("point")
+                <input type="text" {...register("point")
 
                 } placeholder="review point" />
 

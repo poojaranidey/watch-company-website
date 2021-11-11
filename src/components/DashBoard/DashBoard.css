@@ -1,3 +1,28 @@
-.height{
-    height: 530px;
+.row{
+    height:500px;
+}
+.heading{
+    color:rgb(231, 130, 47);
+}
+.sidebar{
+    display:grid;
+    
+    justify-content: center;
+    align-content: center;
+ 
+    background-color: black;
+}
+.anotherSidebar{
+    display:grid;
+    
+    justify-content: center;
+    align-content: center;
+ 
+    background-color: black;
+}
+.link{
+    text-decoration: none;
+    color:white;
+    font-weight: 900;
+    padding-top: 30px;
 }

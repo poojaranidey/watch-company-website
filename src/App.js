@@ -17,6 +17,11 @@ import DashBoard from './components/DashBoard/DashBoard';
 import Reviews from './components/Reviews/Reviews';
 import Payment from './components/Payment/Payment';
 import AddReview from './components/AddReview/AddReview';
+import AddProduct from './components/AddProduct/AddProduct';
+
+import ManageOrder from './components/ManageOrder/ManageOrder';
+import ManageProduct from './components/ManageProduct/ManageProduct';
+import MakeAdmin from './components/MakeAdmin/MakeAdmin';
 
 function App() {
   return (
@@ -44,15 +49,21 @@ function App() {
             <Route exact path='/dashBoard'>
               <DashBoard></DashBoard>
             </Route>
-            <Route exact path='/reviews'>
-              <Reviews></Reviews>
-            </Route>
+
+
             <Route exact path='/payment'>
               <Payment></Payment>
             </Route>
             <Route exact path='/addreview'>
               <AddReview></AddReview>
             </Route>
+            <Route exact path='/addproduct'>
+              <AddProduct></AddProduct>
+            </Route>
+            <Route exact path='/reviews'>
+              <Reviews></Reviews>
+            </Route>
+
             <Route exact path='/login'>
               <Login></Login>
             </Route>
@@ -62,6 +73,15 @@ function App() {
 
             <Route exact path="/myorder">
               <MyOrder></MyOrder>
+            </Route>
+            <Route exact path="/makeadmin">
+              <MakeAdmin></MakeAdmin>
+            </Route>
+            <Route exact path="/manageorder">
+              <ManageOrder></ManageOrder>
+            </Route>
+            <Route exact path="/manageproduct">
+              <ManageProduct></ManageProduct>
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>

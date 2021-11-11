@@ -1,13 +1,13 @@
-.add-review form{
+.add-product form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.add-review form input,textarea{
+.add-product form input,textarea{
     width:40%;
     margin-bottom: 15px;
 }
-.add-review {
+.add-product {
     margin:20px;
 }

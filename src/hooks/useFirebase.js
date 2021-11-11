@@ -15,6 +15,7 @@ const useFirebase = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [pass, setPass] = useState('')
+    const [admin, setAdmin] = useState(false)
 
 
     const signInUsingGoogle = () => {
@@ -59,6 +60,7 @@ const useFirebase = () => {
                 const newUser = result.user
                 newUser.displayName = name
                 setUser(newUser)
+                saveUser(email, name);
                 history.push('/home')
 
             })
@@ -84,6 +86,25 @@ const useFirebase = () => {
             })
     }
 
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/users/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])
+
+    const saveUser = (email, displayName) => {
+        const user = { email, displayName };
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then()
+    }
+
     useEffect(() => {
         const changeAuth = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -97,8 +118,9 @@ const useFirebase = () => {
 
 
 
+
     return {
-        signInUsingGoogle, user, error, signOutt, handleName, handleEmail, handlePass, signUpp, loggIn, loading
+        signInUsingGoogle, user, error, signOutt, handleName, handleEmail, handlePass, signUpp, loggIn, loading, admin
     }
 };
 

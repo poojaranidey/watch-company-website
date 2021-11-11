@@ -5,7 +5,8 @@ import './Service.css';
 
 
 const Service = (props) => {
-    console.log(props.service)
+    console.log(props.service._id)
+
     return (
         <Col>
             <div className="service pb-3">
@@ -13,7 +14,7 @@ const Service = (props) => {
                 <h3>{props.service?.name}</h3>
                 <h5>Price: {props.service?.price}</h5>
                 <p className="px-3">{props.service?.description}</p>
-                <Link to={`/details/${props.service?.id}`}>
+                <Link to={`/details/${props.service?._id}`}>
                     <button className="btn btn-warning">See details for   {props.service?.name.toLowerCase()}</button>
                 </Link>
             </div></Col>
