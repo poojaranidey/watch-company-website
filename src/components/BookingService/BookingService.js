@@ -17,8 +17,9 @@ const BookingService = () => {
         formState: { errors },
     } = useForm();
     const { user } = useFirebase();
-    const { name, image, description, location } = service;
+    const { name, image, description, price } = service;
     const { email, displayName } = user;
+    console.log(user);
     useEffect(() => {
         fetch(`http://localhost:5000/products/${id}`)
             .then((res) => res.json())
@@ -101,8 +102,8 @@ const BookingService = () => {
                         <Col sm={12} lg={6}>
                             <div>
                                 <img className="booking-service-image" src={image} alt="" />
-                                <h2>Place Name: {name}</h2>
-                                <h4>Location: {location}</h4>
+                                <h2>Watch Name: {name}</h2>
+                                <h2> Price:{price}</h2>
                                 <p>
                                     <small>{description}</small>
                                 </p>

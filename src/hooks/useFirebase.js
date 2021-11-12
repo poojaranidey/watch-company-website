@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, updateProfile } from "firebase/auth";
 import initializeAuthentication from '../Firebase/firebase.init';
 
 initializeAuthentication();
@@ -61,6 +61,12 @@ const useFirebase = () => {
                 newUser.displayName = name
                 setUser(newUser)
                 saveUser(email, name);
+                updateProfile(auth.currentUser, {
+                    displayName: name
+                }).then(() => {
+                }).catch((error) => {
+                });
+
                 history.push('/home')
 
             })
@@ -71,6 +77,29 @@ const useFirebase = () => {
             })
     }
 
+
+    // const signUpp = (email, password, name, history) => {
+    //     setLoading(true);
+    //     createUserWithEmailAndPassword(auth, email, password)
+    //         .then((result) => {
+    //             setError('');
+    //             const newUser = { email, displayName: name };
+    //             setUser(newUser);
+    //             // send name to firebase after creation
+    //             saveUser(email, name);
+    //             updateProfile(auth.currentUser, {
+    //                 displayName: name
+    //             }).then(() => {
+    //             }).catch((error) => {
+    //             });
+    //             history.replace('/');
+    //         })
+    //         .catch((error) => {
+    //             setError(error.message);
+    //             console.log(error);
+    //         })
+    //         .finally(() => setLoading(false));
+    // }
 
     const loggIn = history => {
         setLoading(true)

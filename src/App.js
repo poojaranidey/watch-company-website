@@ -46,20 +46,20 @@ function App() {
               <BookingService></BookingService>
             </PrivateRoute>
 
-            <Route exact path='/dashboard'>
+            <PrivateRoute path='/dashboard'>
               <DashBoard></DashBoard>
-            </Route>
+            </PrivateRoute>
 
 
-            <Route exact path='/payment'>
+            {/* <PrivateRoute exact path='/payment'>
               <Payment></Payment>
-            </Route>
-            <Route exact path='/addreview'>
+            </PrivateRoute>
+            <PrivateRoute exact path='/addreview'>
               <AddReview></AddReview>
-            </Route>
-            <Route exact path='/addproduct'>
+            </PrivateRoute>
+            <PrivateRoute exact path='/addproduct'>
               <AddProduct></AddProduct>
-            </Route>
+            </PrivateRoute> */}
             <Route exact path='/reviews'>
               <Reviews></Reviews>
             </Route>
@@ -71,18 +71,18 @@ function App() {
               <Register></Register>
             </Route>
 
-            <Route exact path="/myorder">
+            {/* <Route exact path="/myorder">
               <MyOrder></MyOrder>
-            </Route>
+            </Route> */}
             {/* <Route exact path="/makeadmin">
               <MakeAdmin></MakeAdmin>
             </Route> */}
-            <Route exact path="/manageorder">
+            {/* <Route exact path="/manageorder">
               <ManageOrder></ManageOrder>
             </Route>
             <Route exact path="/manageproduct">
               <ManageProduct></ManageProduct>
-            </Route>
+            </Route> */}
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>

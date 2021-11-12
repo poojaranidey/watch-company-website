@@ -4,6 +4,7 @@ import { Container, Row, Table } from 'react-bootstrap';
 
 import { FaCheck, FaTrash } from "react-icons/fa";
 import useAuth from '../../hooks/useAuth';
+import "./ManageOrder.css"
 
 const ManageOrder = () => {
     const { user } = useAuth()
@@ -76,7 +77,7 @@ const ManageOrder = () => {
                         <div >
                             <h3 className="text-center py-5 ">Traveller Management</h3>
                             <div className="d-flex justify-content-between text-start">
-                                <p className="display  event w20">Event</p>
+                                <p className="display  event w20">Product</p>
                                 <p className="w20">Traveller</p>
                                 <p className="display  event w20">Email</p>
                                 <p className=" w20">Status</p>

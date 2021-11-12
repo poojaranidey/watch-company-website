@@ -1,0 +1,13 @@
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    .event{
+         display: none;
+     }
+ }
+ @media only screen and (min-width:689px) and (max-width: 991px){
+   
+      .event{
+        
+         display: none;
+     }
+ }

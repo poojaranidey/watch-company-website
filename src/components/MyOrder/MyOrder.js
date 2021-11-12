@@ -53,7 +53,7 @@ const MyOrder = () => {
                                                 }
                                                 <div style={{ height: '150px' }} className="d-flex align-items-center justify-content-center w-100 border border-1">
                                                     <div className="d-flex align-items-center">
-                                                        <div className="w-50 h-100"><img className="w-50 h-70" src={order?.image} alt="" /></div>
+                                                        <div className="w-50 h-100"><img className="w-50 h-100" src={order?.image} alt="" /></div>
                                                         <div className="text-start">
 
                                                             <h6 className="p-0 m-0">watch name : {order?.name}</h6>

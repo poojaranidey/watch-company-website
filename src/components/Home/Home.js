@@ -77,6 +77,10 @@ const Home = () => {
                             </div></Col>)
                     }
                 </Row>
+                <Link to='/services'>
+                    <button className="btn btn-warning">See more </button>
+                </Link>
+
             </Container>
 
             <div className="review">
