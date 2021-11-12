@@ -46,7 +46,7 @@ function App() {
               <BookingService></BookingService>
             </PrivateRoute>
 
-            <Route exact path='/dashBoard'>
+            <Route exact path='/dashboard'>
               <DashBoard></DashBoard>
             </Route>
 
@@ -74,9 +74,9 @@ function App() {
             <Route exact path="/myorder">
               <MyOrder></MyOrder>
             </Route>
-            <Route exact path="/makeadmin">
+            {/* <Route exact path="/makeadmin">
               <MakeAdmin></MakeAdmin>
-            </Route>
+            </Route> */}
             <Route exact path="/manageorder">
               <ManageOrder></ManageOrder>
             </Route>

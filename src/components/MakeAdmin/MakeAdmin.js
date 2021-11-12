@@ -36,7 +36,7 @@ const MakeAdmin = () => {
         <div >
             <h1>Make Admin</h1>
             <form onSubmit={handleAdminSubmit}>
-                <div className="mb-3  adminbutton">
+                <div className="mb-3  adminbutton ">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input type="email" onBlur={handleOnBlur}
                         className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />

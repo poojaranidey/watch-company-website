@@ -28,8 +28,8 @@ const Home = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h1 className="heading text-uppercase ">Your Journeys begins</h1>
-                            <p className="tag-p">A journey of a 1000 miles begins with a single step</p>
+                            <h1 className="heading text-uppercase ">Time to be Different - That's our Motto</h1>
+                            <p className="tag-p">  A watch says a lot about you and it should help you stand out (no Apple watches here). We only carry watch brands that make a statement.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -41,8 +41,9 @@ const Home = () => {
                         />
 
                         <Carousel.Caption>
-                            <h1 className="heading text-uppercase ">Your Journeys begins</h1>
-                            <p className="tag-p">A journey of a 1000 miles begins with a single step</p>
+                            <h1 className="heading text-uppercase ">50% OFF ARSENALE COLLECTION</h1>
+                            <p className="tag-p">Watches.com Exclusive Offer
+                                Take an EXTRA 20% off any Arsenale watch plus get a FREE rubber strap</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -54,8 +55,8 @@ const Home = () => {
                         />
 
                         <Carousel.Caption>
-                            <h1 className="heading text-uppercase ">Your Journeys begins</h1>
-                            <p className="tag-p">A journey of a 1000 miles begins with a single step</p>
+                            <h1 className="heading text-uppercase ">Time to be Different - That's our Motto</h1>
+                            <p className="tag-p"> A watch says a lot about you and it should help you stand out (no Apple watches here). We only carry watch brands that make a statement.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -93,36 +94,36 @@ const Home = () => {
                             <Accordion >
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>
-                                        We are building a bigger community of responsible travellers </Accordion.Header>
+                                        We are building a bigger collection of responsible Watches </Accordion.Header>
                                     <Accordion.Body>
-                                        We are building a bigger community of responsible travellers by providing information on responsible travel throughout our website and online magazine, Days to Come.
+                                        We are building a bigger community of responsible all watches by providing best offer on responsible watch throughout our website .
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>
-                                        To make it easy for travellers to tour responsibly</Accordion.Header>
+                                        To make it easy for people to select watch responsibly</Accordion.Header>
                                     <Accordion.Body>
-                                        We are showcasing how operators incorporate sustainability into their tours, so you know exactly what impact your trip can have.
+                                        We are showcasing how operators incorporate sustainability for all watches, so you know exactly what impact your watch can have.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
                                     <Accordion.Header>
-                                        To connect people to life-enriching travel experiences</Accordion.Header>
+                                        To have people to life-enriching smart watch experiences</Accordion.Header>
                                     <Accordion.Body>
-                                        ourRadar has been built on the guiding belief that travel has the ability to not only enrich our lives but the lives of all living things around us. We believe that travel is a superpower
+                                        ourRadar has been built on the guiding belief that watches has the ability to not only enrich our lives for time but the lives of all living things around us. We believe that time is a superpower
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
-                                    <Accordion.Header>You Need to Know About Journeys Are Best Measured In New Friends </Accordion.Header>
+                                    <Accordion.Header>You Need to Know About offers Are Best Measured In New Friends </Accordion.Header>
                                     <Accordion.Body>
-                                        We always have and always will strive to connect people to life-enriching travel experiences, and that means playing our part in protecting the planet.
+                                        We always have and always will strive to connect people to life-enriching best watches experiences, and that means playing our part in protecting the planet for your best time.
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>
 
                         </div>
                         <div className="col-lg-6">
-                            <img src="https://images.unsplash.com/photo-1506193095-80bc749473f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" className="w-100 p-5" alt=""></img>
+                            <img src="https://images.unsplash.com/photo-1506193095-80bc749473f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" className="w-75 p-5" alt=""></img>
                         </div>
                     </div>
                 </section>
