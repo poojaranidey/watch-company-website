@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <div>
-            <div>
+            <section>
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -60,32 +60,36 @@ const Home = () => {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-            </div>
-            <Container>
-                <h1 className="text-warning mt-5">Our Watches</h1>
-                <Row xs={1} md={3} className="g-4  py-5">
-                    {
-                        services.slice(0, 6)?.map(service => <Col>
-                            <div className="service pb-3">
-                                <img style={{ height: '220px' }} src={service?.image} className=" w-100 " alt="" />
-                                <h3>{service?.name}</h3>
-                                <h5>Price: {service?.price}</h5>
-                                <p className="px-3">{service?.description}</p>
-                                <Link to={`/details/${service?._id}`}>
-                                    <button className="btn btn-warning">Buy Now{service?.name.toLowerCase()}</button>
-                                </Link>
-                            </div></Col>)
-                    }
-                </Row>
-                <Link to='/services'>
-                    <button className="btn btn-warning">See more </button>
-                </Link>
+            </section>
+            <section>
+                <Container>
+                    <h1 className="text-warning mt-5">Our Watches</h1>
+                    <Row xs={1} md={3} className="g-4  py-5">
+                        {
+                            services.slice(0, 6)?.map(service => <Col>
+                                <div className="service pb-3">
+                                    <img style={{ height: '220px' }} src={service?.image} className=" w-100 " alt="" />
+                                    <h3>{service?.name}</h3>
+                                    <h5>Price: {service?.price}</h5>
+                                    <p className="px-3">{service?.description}</p>
+                                    <Link to={`/details/${service?._id}`}>
+                                        <button className="btn btn-warning">Buy Now{service?.name.toLowerCase()}</button>
+                                    </Link>
+                                </div></Col>)
+                        }
+                    </Row>
+                    <Link to='/services'>
+                        <button className="btn btn-warning">See more </button>
+                    </Link>
 
-            </Container>
+                </Container>
+            </section>
 
-            <div className="review mt-5">
-                <Reviews></Reviews>
-            </div>
+            <section>
+                <div className="review mt-5">
+                    <Reviews></Reviews>
+                </div>
+            </section>
 
             <div className="mb-5 pb-2 accordition-items mt-5">
 

@@ -75,22 +75,22 @@ const ManageOrder = () => {
                 {
                     user.email && <Container>
                         <div >
-                            <h3 className="text-center py-5 ">Traveller Management</h3>
+                            <h3 className="text-center py-5 ">All Order Management</h3>
                             <div className="d-flex justify-content-between text-start">
                                 <p className="display  event w20">Product</p>
-                                <p className="w20">Traveller</p>
-                                <p className="display  event w20">Email</p>
+                                <p className="w20 event">Userr</p>
+                                <p className="display   w20">Email</p>
                                 <p className=" w20">Status</p>
                                 <p className="w20">Action</p>
                             </div>
                             {
                                 all.map(a => <div className="d-flex justify-content-between text-start" key={a._id}>
 
-                                    <p className="w20 ">{a.name}</p>
-                                    <p className="w20 ">{a.displayName}</p>
-                                    <p className=" w20">{a.email}</p>
+                                    <p className="w20 event ">{a.name}</p>
+                                    <p className="w20 event">{a.displayName}</p>
+                                    <p className=" w20 ">{a.email}</p>
                                     <p className="w20 ">{a?.status}</p>
-                                    <p className="w20"><FaCheck className="" onClick={() => handleApproved(a._id)} /><FaTrash onClick={() => deleteBtn(a._id)} className="" /></p>
+                                    <p className="w20"><FaCheck className="w20" onClick={() => handleApproved(a._id)} /><FaTrash onClick={() => deleteBtn(a._id)} className="w20" /></p>
                                 </div>)
                             }
                         </div>
