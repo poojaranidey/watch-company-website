@@ -21,7 +21,7 @@ const BookingService = () => {
     const { email, displayName } = user;
     console.log(user);
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://damp-taiga-36214.herokuapp.com/products/${id}`)
             .then((res) => res.json())
             .then((data) => setService(data));
     }, []);
@@ -37,7 +37,7 @@ const BookingService = () => {
             }
             const status = "pending";
             const bookingItem = { ...data, name, image, status };
-            fetch("http://localhost:5000/myorder", {
+            fetch("https://damp-taiga-36214.herokuapp.com/myorder", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",

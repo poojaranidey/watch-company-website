@@ -13,20 +13,20 @@ const ManageOrder = () => {
     const [allEvent, setAllEvent] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/myorder')
+        fetch('https://damp-taiga-36214.herokuapp.com/myorder')
             .then(res => res.json())
             .then(data => setAll(data))
     }, [approve])
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://damp-taiga-36214.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setAllEvent(data))
     }, [])
 
 
     const deleteBtn = id => {
-        fetch(`http://localhost:5000/myorder/${id}`, {
+        fetch(`https://damp-taiga-36214.herokuapp.com/myorder/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
@@ -42,7 +42,7 @@ const ManageOrder = () => {
         status: 'Shipped'
     }
     const handleApproved = id => {
-        fetch(`http://localhost:5000/myorder/${id}`, {
+        fetch(`https://damp-taiga-36214.herokuapp.com/myorder/${id}`, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(update)

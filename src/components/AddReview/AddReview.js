@@ -9,7 +9,7 @@ const AddReview = () => {
     const time = date.toLocaleTimeString();
     const onSubmit = data => {
         data.time = time;
-        axios.post('http://localhost:5000/review', data)
+        axios.post('https://damp-taiga-36214.herokuapp.com/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added sucessfully');

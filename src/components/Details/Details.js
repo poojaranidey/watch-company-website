@@ -17,7 +17,7 @@ const Details = () => {
 
     const [services, setServices] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${serviceId}`)
+        fetch(`https://damp-taiga-36214.herokuapp.com/products/${serviceId}`)
             .then(res => res.json())
             .then(data => setServices(data))
 
