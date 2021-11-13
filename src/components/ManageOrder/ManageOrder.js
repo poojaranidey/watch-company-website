@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Table } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import { FaCheck, FaTrash } from "react-icons/fa";
 import useAuth from '../../hooks/useAuth';
@@ -55,19 +55,7 @@ const ManageOrder = () => {
             })
     }
 
-    const deleteEvent = id => {
-        fetch(`http://localhost:5000/products/${id}`, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount > 0) {
-                    alert('order Delete successfull')
-                    const newAllEvent = allEvent.filter(c => c._id !== id)
-                    setAllEvent(newAllEvent)
-                }
-            })
-    }
+
 
     return (
         <div>

@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Accordion, Carousel, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Reviews from '../Reviews/Reviews';
-import Service from '../Service/Service';
 
-import Services from '../Services/Services';
 import "./Home.css"
 
 const Home = () => {

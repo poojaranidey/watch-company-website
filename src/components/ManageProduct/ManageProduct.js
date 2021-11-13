@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Table } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 
-import { FaCheck, FaTrash } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 import useAuth from '../../hooks/useAuth';
 
 const ManageProduct = () => {
