@@ -60,7 +60,7 @@ const ManageProduct = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.deletedCount > 0) {
-                    alert('Event Delete successfull')
+                    alert('Product Delete successfull')
                     const newAllEvent = allEvent.filter(c => c._id !== id)
                     setAllEvent(newAllEvent)
                 }
@@ -79,7 +79,7 @@ const ManageProduct = () => {
                                     <Table className="customWidth" striped bordered hover>
                                         <thead>
                                             <tr>
-                                                <th>Event Title</th>
+                                                <th>Product Name</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>

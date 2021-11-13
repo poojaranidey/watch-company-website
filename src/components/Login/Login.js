@@ -10,18 +10,18 @@ const Login = () => {
 
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/home';
+
 
 
     const handleLogIn = (e) => {
         e.preventDefault();
-        loggIn(history)
+        loggIn(history, location)
     }
 
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {
-                history.push(redirect_uri);
+                history.push(location.state?.from || '/dashboard');
             })
     }
 

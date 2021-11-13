@@ -62,7 +62,7 @@ const Home = () => {
                 </Carousel>
             </div>
             <Container>
-                <h1>Our Watches</h1>
+                <h1 className="text-warning mt-5">Our Watches</h1>
                 <Row xs={1} md={3} className="g-4  py-5">
                     {
                         services.slice(0, 6)?.map(service => <Col>
@@ -83,14 +83,14 @@ const Home = () => {
 
             </Container>
 
-            <div className="review">
+            <div className="review mt-5">
                 <Reviews></Reviews>
             </div>
 
-            <div className="mb-5 pb-2 accordition-items">
+            <div className="mb-5 pb-2 accordition-items mt-5">
 
                 <section className="container mt-5 pb-3">
-                    <h1 className="fw-bold text-center  mt-2">People Why Choose Our Watches
+                    <h1 className="fw-bold text-center text-warning mt-5">People Why Choose Our Watches
                     </h1>
                     <div className="row align-items-center">
 

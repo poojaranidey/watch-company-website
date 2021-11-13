@@ -101,12 +101,12 @@ const useFirebase = () => {
     //         .finally(() => setLoading(false));
     // }
 
-    const loggIn = history => {
+    const loggIn = (history, location) => {
         setLoading(true)
         signInWithEmailAndPassword(auth, email, pass)
             .then((result) => {
                 setUser(result.user)
-                history.push('/home')
+                history.push(location.state?.from || '/dashboard')
             })
             .catch((error) => {
                 setError(error.message)

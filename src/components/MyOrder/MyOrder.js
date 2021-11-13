@@ -58,7 +58,7 @@ const MyOrder = () => {
 
                                                             <h6 className="p-0 m-0">watch name : {order?.name}</h6>
                                                             <p>date : {order?.date || 'not given'}</p>
-                                                            <Button variant="warning" className="mx-2" >{order?.status}</Button>
+                                                            {/* <Button variant="warning" className="mx-2" >{order?.status}</Button> */}
                                                             <Button variant="danger" className="mx-2" onClick={() => deleteBtn(order._id)}>Cancel</Button>
                                                         </div>
                                                     </div>

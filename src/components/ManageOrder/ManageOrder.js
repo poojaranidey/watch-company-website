@@ -39,7 +39,7 @@ const ManageOrder = () => {
             })
     }
     const update = {
-        status: 'Approved'
+        status: 'Shipped'
     }
     const handleApproved = id => {
         fetch(`http://localhost:5000/myorder/${id}`, {
@@ -62,7 +62,7 @@ const ManageOrder = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.deletedCount > 0) {
-                    alert('Event Delete successfull')
+                    alert('order Delete successfull')
                     const newAllEvent = allEvent.filter(c => c._id !== id)
                     setAllEvent(newAllEvent)
                 }
