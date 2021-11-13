@@ -72,7 +72,7 @@ const Home = () => {
                                 <h5>Price: {service?.price}</h5>
                                 <p className="px-3">{service?.description}</p>
                                 <Link to={`/details/${service?._id}`}>
-                                    <button className="btn btn-warning">See details for   {service?.name.toLowerCase()}</button>
+                                    <button className="btn btn-warning">Buy Now{service?.name.toLowerCase()}</button>
                                 </Link>
                             </div></Col>)
                     }

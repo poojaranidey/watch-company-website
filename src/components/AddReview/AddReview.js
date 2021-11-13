@@ -5,8 +5,10 @@ import "./AddReview.css"
 
 const AddReview = () => {
     const { register, handleSubmit, reset } = useForm();
+    const date = new Date();
+    const time = date.toLocaleTimeString();
     const onSubmit = data => {
-        console.log(data);
+        data.time = time;
         axios.post('http://localhost:5000/review', data)
             .then(res => {
                 if (res.data.insertedId) {

@@ -20,6 +20,7 @@ import Payment from '../Payment/Payment';
 import ManageOrder from '../ManageOrder/ManageOrder';
 import AddProduct from '../AddProduct/AddProduct';
 import ManageProduct from '../ManageProduct/ManageProduct';
+import DashBoardHome from '../DashBoardHome/DashBoardHome';
 
 const DashBoard = () => {
     const { admin, user, signOutt } = useAuth();
@@ -33,7 +34,7 @@ const DashBoard = () => {
                 <div className="col-12 col-md-3 sidebar">
                     <h1 className="heading">DashBoard</h1>
 
-                    {admin && <div className="anotherSidebar" >
+                    {admin ? <div className="anotherSidebar" >
                         <Link to={`${url}/addproduct`} className=" link">
                             Add A Product
                         </Link>
@@ -46,19 +47,19 @@ const DashBoard = () => {
 
                         <Link className=" link mb-1" to={`${url}/makeadmin`}>Make Admin</Link>
 
-                    </div>}
+                    </div> : <div className="anotherSidebar">
+                        <Link to={`${url}/addreview`} className=" link">
+                            Add your review
+                        </Link>
+                        <Link to={`${url}/myorder`} className=" link">My order</Link>
+                        <Link to={`${url}/payment`} className=" link">
+                            Payment
+                        </Link>
+                    </div>
+                    }
 
 
-                    <Link to={`${url}/addreview`} className=" link">
-                        Add your review
-                    </Link>
-                    {/* <Link to="/myorder" className=" link">
-                        My order
-                    </Link> */}
-                    <Link to={`${url}/myorder`} className=" link">My order</Link>
-                    <Link to={`${url}/payment`} className=" link">
-                        Payment
-                    </Link>
+
                     {
                         user.email ?
                             <button className="btn btn-warning text-blue fw-bold my-3" onClick={signOutt}>log out</button>
@@ -72,7 +73,7 @@ const DashBoard = () => {
                     {/* <img className="w-100 row" src="https://images.unsplash.com/photo-1525342306245-c6a1e32087ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" /> */}
                     <Switch>
                         <Route exact path={path}>
-                            <MyOrder></MyOrder>
+                            <DashBoardHome></DashBoardHome>
                         </Route>
                         <Route exact path={`${path}/payment`}>
                             <Payment></Payment>

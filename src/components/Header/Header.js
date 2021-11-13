@@ -22,13 +22,17 @@ const Header = () => {
 
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
 
-                            <Nav.Link className="navlink" as={Link} to="/services">Services</Nav.Link>
-                            <Nav.Link className="navlink" as={Link} to="/dashboard">DashBoard</Nav.Link>
+                            <Nav.Link className="navlink" as={Link} to="/services">Explore</Nav.Link>
+
                             {/* <Nav.Link className="navlink" as={Link} to="/about">About-us</Nav.Link> */}
-                            {user.email && <span className="px-3 pt-2" style={{ color: 'white' }}>Hello {user.displayName} </span>}
+
                             {
                                 user.email ?
-                                    <button className="btn btn-warning text-blue fw-bold" onClick={signOutt}>log out</button>
+                                    <>
+                                        <Nav.Link className="navlink" as={Link} to="/dashboard">DashBoard</Nav.Link>
+                                        {user.email && <span className="px-3 pt-2" style={{ color: 'white' }}>Hello {user.displayName} </span>}
+                                        <button className="btn btn-warning text-blue fw-bold" onClick={signOutt}>log out</button>
+                                    </>
                                     :
                                     <Nav.Link as={Link} to="/login">Login</Nav.Link>}
 
