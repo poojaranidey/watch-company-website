@@ -76,7 +76,7 @@ const BookingService = () => {
                                 {errors.email && (
                                     <span className="text-danger">This field is required</span>
                                 )}
-                                <label>Travel Date:</label>
+                                <label>Booking Date:</label>
                                 <input type="date" {...register("date", { required: true })} />
                                 {errors.date && (
                                     <span className="text-danger">This field is required</span>
